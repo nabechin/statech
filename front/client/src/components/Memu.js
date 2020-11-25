@@ -46,6 +46,7 @@ const Memu = () => {
         onClick={handleToggle}
         variant="outlined"
         className="mr-5 bg-light"
+        style={{ outline: "0" }}
       >
         投稿する
       </Button>
