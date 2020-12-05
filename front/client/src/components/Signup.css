@@ -1,5 +1,6 @@
 body {
     background: rgb(246, 247, 248)0;
+    height: 100%;
 }
 
 h1 {
@@ -11,7 +12,7 @@ h1 {
 .card {
     width: 400px;
     position: absolute;
-    top: 200px;
+    top: 150px;
 }
 
 .form-box {
