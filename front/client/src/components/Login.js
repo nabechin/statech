@@ -38,6 +38,7 @@ class Login extends React.Component {
                   background: "#262626",
                   color: "white",
                   borderRadius: "16px",
+                  outline: "none",
                 }}
               >
                 Login

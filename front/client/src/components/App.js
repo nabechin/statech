@@ -1,17 +1,11 @@
 import React from "react";
 import Login from "./Login";
 import MyPage from "./MyPage";
+import Article from "./Article";
 import Route from "./Route";
 import Signup from "./Signup";
 
 class App extends React.Component {
-  getLinks() {
-    const links = [
-      { linkName: "Sign Up", href: "/signup" },
-      { linkName: "Log In", href: "/login" },
-    ];
-    return links;
-  }
   render() {
     return (
       <div>
@@ -23,6 +17,9 @@ class App extends React.Component {
         </Route>
         <Route path="/users/me">
           <MyPage />
+        </Route>
+        <Route path="/articles">
+          <Article />
         </Route>
       </div>
     );

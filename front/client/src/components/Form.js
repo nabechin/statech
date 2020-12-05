@@ -1,12 +1,12 @@
 import React from "react";
+import TextField from "./TextField";
 
 const Form = ({ fields }) => {
   const formFields = fields.map(({ labelName, fieldName }) => {
     return (
       <form key={fieldName}>
         <div className="mb-3">
-          <label className="form-label">{labelName}</label>
-          <input type={fieldName} className="form-control" />
+          <TextField labelName={labelName} fieldName={fieldName}></TextField>
         </div>
       </form>
     );
