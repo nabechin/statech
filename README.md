@@ -3,5 +3,13 @@
 ## How do I get ?
 
 ```
-git clone 
+git clone https://github.com/nabechin/statech.git
+```
+
+```
+yarn install
+```
+
+```
+docker compose up -d
 ```
