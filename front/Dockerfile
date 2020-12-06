@@ -1,5 +1,5 @@
 # ベースイメージの作成
-FROM node:12.7.0
+FROM node:15.3.0-alpine3.12
 # コンテナ内で作業するディレクトリを指定
 WORKDIR /myapp
 # package.jsonとyarn.lockを/usr/src/appにコピー
