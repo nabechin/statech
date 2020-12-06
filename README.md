@@ -1,5 +1,5 @@
 # README
-## What is the Statech
+## What is the Statech ?
 ・社内のエンジニの技術内容が一目で把握できます:dash:  
 ・営業や内勤でエンジニアの技術の共有が可能です:collision:  
 ・エンジニアはブログのように技術内容を投稿し社内でシェアが可能です:+1:
