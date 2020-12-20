@@ -1,14 +1,17 @@
 body {
   background: #E0E0E0;
-  height: 100%;
+  height: auto;
+}
+
+.top-box {
+  display: flex;
 }
 
 .article-main-box {
   /* position: relative;
   top: 30px;
   left: 400px; */
-  margin-left: 400px;
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 .article-sub-box {
@@ -82,4 +85,36 @@ body {
   position: relative;
   top: 10px;
   left: 55px;
+}
+
+/* /////left-side-box */
+
+.left-box {
+  /* position: relative;
+  top: 57px;
+  left: 200px; */
+  margin-top: 30px;
+  margin-left: 200px;
+  margin-right: 40px;
+}
+
+.search {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.search-icon {
+  position: relative;
+  right: 18px;
+  background-color: #ffffff;
+}
+
+.left-box-menu {
+  text-decoration: none;
+  color: black;
+}
+
+.left-box-menu-line {
+  width: 250px;
+  color: black;
 }
