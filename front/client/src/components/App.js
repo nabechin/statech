@@ -4,10 +4,12 @@ import MyPage from "./MyPage";
 import Article from "./Article";
 import Route from "./Route";
 import Signup from "./Signup";
+import Top from "./Top";
 
-import { faEdit } from "@fortawesome/free-solid-svg-icons";
+import { far } from "@fortawesome/free-regular-svg-icons";
+import { faEdit, faHeart, faComment, faUser } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
-library.add(faEdit);
+library.add(far, faEdit, faHeart, faComment, faUser);
 
 class App extends React.Component {
   render() {
@@ -24,6 +26,9 @@ class App extends React.Component {
         </Route>
         <Route path="/articles">
           <Article />
+        </Route>
+        <Route path="/top">
+          <Top/>
         </Route>
       </div>
     );
