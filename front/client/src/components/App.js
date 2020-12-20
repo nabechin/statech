@@ -5,6 +5,10 @@ import Article from "./Article";
 import Route from "./Route";
 import Signup from "./Signup";
 
+import { faEdit } from "@fortawesome/free-solid-svg-icons";
+import { library } from "@fortawesome/fontawesome-svg-core";
+library.add(faEdit);
+
 class App extends React.Component {
   render() {
     return (

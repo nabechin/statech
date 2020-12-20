@@ -6,6 +6,7 @@ import Paper from "@material-ui/core/Paper";
 import Popper from "@material-ui/core/Popper";
 import MenuItem from "@material-ui/core/MenuItem";
 import MenuList from "@material-ui/core/MenuList";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 
@@ -39,6 +40,7 @@ const Memu = () => {
         className="mr-5 bg-light"
         style={{ outline: "0" }}
       >
+        <FontAwesomeIcon icon="edit" />
         投稿する
       </Button>
       <Popper
