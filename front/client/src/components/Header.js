@@ -1,4 +1,5 @@
 import React from "react";
+import './css/Navi.css'
 
 const Header = ({ children }) => {
   return (

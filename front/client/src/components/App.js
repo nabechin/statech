@@ -7,9 +7,9 @@ import Signup from "./Signup";
 import Top from "./Top";
 
 import { far } from "@fortawesome/free-regular-svg-icons";
-import { faEdit, faHeart, faComment, faUser, faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faEdit, faHeart, faComment, faUser, faSearch, faSortDown } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
-library.add(far, faEdit, faHeart, faComment, faUser, faSearch);
+library.add(far, faEdit, faHeart, faComment, faUser, faSearch, faSortDown);
 
 class App extends React.Component {
   render() {

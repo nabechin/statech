@@ -7,6 +7,7 @@ import Popper from "@material-ui/core/Popper";
 import MenuItem from "@material-ui/core/MenuItem";
 import MenuList from "@material-ui/core/MenuList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import './css/Navi.css'
 
 
 
@@ -31,49 +32,55 @@ const Memu = () => {
   }
   return (
     <div>
-      <Button
-        ref={anchorRef}
-        aria-controls={open ? "menu-list-grow" : undefined}
-        aria-haspopup="true"
-        onClick={handleToggle}
-        variant="outlined"
-        className="mr-5 bg-light"
-        style={{ outline: "0" }}
-      >
-        <FontAwesomeIcon icon="edit" />
-        投稿する
-      </Button>
-      <Popper
-        open={open}
-        anchorEl={anchorRef.current}
-        role={undefined}
-        transition
-        disablePortal
-        style={{ width: 200 }}
-      >
-        {({ TransitionProps, placement }) => (
-          <Grow
-            {...TransitionProps}
-            style={{
-              transformOrigin:
-                placement === "bottom" ? "center top" : "center bottom",
-            }}
-          >
-            <Paper>
-              <ClickAwayListener onClickAway={handleClose}>
-                <MenuList
-                  autoFocusItem={open}
-                  id="menu-list-grow"
-                  onKeyDown={handleListKeyDown}
-                >
-                  <MenuItem onClick={handleClose}>記事</MenuItem>
-                  <MenuItem onClick={handleClose}>質問</MenuItem>
-                </MenuList>
-              </ClickAwayListener>
-            </Paper>
-          </Grow>
-        )}
-      </Popper>
+      <span className="nav-box">
+        <span className="nav-user-circle">
+          <FontAwesomeIcon icon={["far", "user"]} className="nav-user-icon"/>
+        </span> 
+        <FontAwesomeIcon icon={["fa", "sort-down"]} className="sort-down-icon"/>
+        <Button
+          ref={anchorRef}
+          aria-controls={open ? "menu-list-grow" : undefined}
+          aria-haspopup="true"
+          onClick={handleToggle}
+          variant="outlined"
+          className="mr-5 bg-light"
+          style={{ outline: "0" }}
+        >
+          <FontAwesomeIcon icon="edit" />
+          投稿する
+        </Button>
+        <Popper
+          open={open}
+          anchorEl={anchorRef.current}
+          role={undefined}
+          transition
+          disablePortal
+          style={{ width: 200 }}
+        >
+          {({ TransitionProps, placement }) => (
+            <Grow
+              {...TransitionProps}
+              style={{
+                transformOrigin:
+                  placement === "bottom" ? "center top" : "center bottom",
+              }}
+            >
+              <Paper>
+                <ClickAwayListener onClickAway={handleClose}>
+                  <MenuList
+                    autoFocusItem={open}
+                    id="menu-list-grow"
+                    onKeyDown={handleListKeyDown}
+                  >
+                    <MenuItem onClick={handleClose}>記事</MenuItem>
+                    <MenuItem onClick={handleClose}>質問</MenuItem>
+                  </MenuList>
+                </ClickAwayListener>
+              </Paper>
+            </Grow>
+          )}
+        </Popper>
+      </span>
     </div>
   );
 };
