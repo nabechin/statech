@@ -33,10 +33,6 @@ const Memu = () => {
   return (
     <div>
       <span className="nav-box">
-        <span className="nav-user-circle">
-          <FontAwesomeIcon icon={["far", "user"]} className="nav-user-icon"/>
-        </span> 
-        <FontAwesomeIcon icon={["fa", "sort-down"]} className="sort-down-icon"/>
         <Button
           ref={anchorRef}
           aria-controls={open ? "menu-list-grow" : undefined}
@@ -49,6 +45,9 @@ const Memu = () => {
           <FontAwesomeIcon icon="edit" />
           投稿する
         </Button>
+        <span className="nav-user-circle">
+          <FontAwesomeIcon icon={["far", "user"]} className="nav-user-icon"/>
+        </span> 
         <Popper
           open={open}
           anchorEl={anchorRef.current}
