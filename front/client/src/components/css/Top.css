@@ -3,6 +3,13 @@ body {
   height: auto;
 }
 
+.article-sub-box-href,
+.article-sub-box-href:hover
+ {
+  text-decoration: none;
+  color : inherit;
+}
+
 .top-box {
   display: flex;
 }
@@ -122,3 +129,4 @@ body {
 .nav-box {
   display: flex;
 }
+

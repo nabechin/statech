@@ -29,7 +29,7 @@ class Post extends React.Component {
       <div>
         <Header>
           <Memu />
-          <Link links={[{ linkName: "Log Out", href: "/logout" }]} />
+          {/* <Link links={[{ linkName: "Log Out", href: "/logout" }]} /> */}
         </Header>
         <div className="container">
           <Paper>

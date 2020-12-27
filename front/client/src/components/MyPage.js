@@ -14,16 +14,16 @@ import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 
 class MyPage extends React.Component {
-  getLinks() {
-    const links = [{ linkName: "Log Out", href: "/login" }];
-    return links;
-  }
+  // getLinks() {
+  //   const links = [{ linkName: "Log Out", href: "/login" }];
+  //   return links;
+  // }
   render() {
     return (
       <div>
         <Header>
           <Memu />
-          <Link links={this.getLinks()} />
+          {/* <Link links={this.getLinks()} /> */}
         </Header>
         <div style={{ padding: "0 70px" }}>
           <Grid container spacing={2} className="mt-2" justify="center">

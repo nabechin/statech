@@ -9,8 +9,6 @@ import MenuList from "@material-ui/core/MenuList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './css/Navi.css'
 
-
-
 const Memu = () => {
   const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef(null);
@@ -21,15 +19,16 @@ const Memu = () => {
     if (anchorRef.current && anchorRef.current.contains(event.target)) {
       return;
     }
-
     setOpen(false);
   };
+  
   function handleListKeyDown(event) {
     if (event.key === "Tab") {
       event.preventDefault();
       setOpen(false);
     }
   }
+
   return (
     <div>
       <span className="nav-box">
@@ -45,7 +44,7 @@ const Memu = () => {
           <FontAwesomeIcon icon="edit" />
           投稿する
         </Button>
-        <span className="nav-user-circle">
+        <span class="mdc-menu mdc-menu-surface nav-user-circle" id="demo-menu">
           <FontAwesomeIcon icon={["far", "user"]} className="nav-user-icon"/>
         </span> 
         <Popper
