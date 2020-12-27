@@ -1,0 +1,132 @@
+body {
+  background: #E0E0E0;
+  height: auto;
+}
+
+.article-sub-box-href,
+.article-sub-box-href:hover
+ {
+  text-decoration: none;
+  color : inherit;
+}
+
+.top-box {
+  display: flex;
+}
+
+.article-main-box {
+  /* position: relative;
+  top: 30px;
+  left: 400px; */
+  margin-top: 30px;
+}
+
+.article-sub-box {
+  width: 500px;
+  height: 85px;
+  background-color: #ffffff;
+  margin-bottom: 2px;
+}
+
+.user-info-box {
+  display: flex;
+}
+
+.user-circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #E0E0E0;
+  position: relative;
+  top: 5px;
+  left: 10px;
+}
+
+.user-icon {
+  font-size: 15px;
+  position: relative;
+  top: 2px;
+  left: 6px;
+}
+
+.user-name {
+  font-size: 5px;
+   position: relative;
+   top: 15px;
+   left: 20px;
+}
+
+.post-date {
+  font-size: 5px;
+  position: relative;
+  top: 15px;
+  left: 35px;
+  color:#999999;
+}
+
+.main-title {
+  position: relative;
+  top: 10px;
+  left: 45px;
+}
+
+.heart-icon {
+  position: relative;
+  top: 10px;
+  left: 45px;
+}
+
+ .heart-count {
+   position: relative;
+   top: 10px;
+   left: 45px;
+ }
+
+.comment-icon {
+  position: relative;
+  top: 10px;
+  left: 55px;
+}
+
+.comment-count {
+  position: relative;
+  top: 10px;
+  left: 55px;
+}
+
+/* /////left-side-box */
+
+.left-box {
+  /* position: relative;
+  top: 57px;
+  left: 200px; */
+  margin-top: 30px;
+  margin-left: 200px;
+  margin-right: 40px;
+}
+
+.search {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.search-icon {
+  position: relative;
+  right: 18px;
+  background-color: #ffffff;
+}
+
+.left-box-menu {
+  text-decoration: none;
+  color: black;
+}
+
+.left-box-menu-line {
+  width: 250px;
+  color: black;
+}
+
+.nav-box {
+  display: flex;
+}
+

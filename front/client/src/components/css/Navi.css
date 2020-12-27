@@ -1,0 +1,21 @@
+.bg-light {
+  width: 145px;
+  height: 40px;
+}
+
+.nav-user-circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  background-color: #999999;
+  position: relative;
+  top: 5px;
+  right: 30px;
+}
+
+.nav-user-icon {
+  font-size: 20px;
+  position: relative;
+  top: 5px;
+  left: 6px;
+}
