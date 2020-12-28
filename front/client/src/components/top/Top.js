@@ -2,6 +2,7 @@ import React from "react";
 import Header from '../Header';
 import Menu from '../Memu'
 import '../css/Top.css'
+import '../css/Common.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Top extends React.Component {

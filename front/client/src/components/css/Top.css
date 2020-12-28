@@ -1,14 +1,3 @@
-body {
-  background: #E0E0E0;
-  height: auto;
-}
-
-.article-sub-box-href,
-.article-sub-box-href:hover
- {
-  text-decoration: none;
-  color : inherit;
-}
 
 .top-box {
   display: flex;
@@ -94,12 +83,7 @@ body {
   left: 55px;
 }
 
-/* /////left-side-box */
-
 .left-box {
-  /* position: relative;
-  top: 57px;
-  left: 200px; */
   margin-top: 30px;
   margin-left: 200px;
   margin-right: 40px;

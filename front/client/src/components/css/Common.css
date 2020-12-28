@@ -1,0 +1,10 @@
+body {
+  background-color: #F6F6F6;
+  height: auto;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color : inherit;
+}
