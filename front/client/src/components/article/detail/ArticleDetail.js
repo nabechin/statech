@@ -12,19 +12,21 @@ class ArticleDetail extends React.Component {
           <Memu></Memu>
         </Header>
         <span class="article-detail-main-box">
-          <span class="hert-icon-detail-circle">
-            <FontAwesomeIcon icon={["far", "heart"]} class="heart-detail-icon"/>
-          </span> 
-          <span class="comment-icon-detail-circle">
-            <FontAwesomeIcon icon={["far", "comment"]} class="comment-detail-icon"/>
-          </span>
-          <div class="user-info-detail-box">
-            <div class="user-icon-detail-circle">
-              <FontAwesomeIcon icon={["far", "user"]} class="user-detail-icon" />
+          <div class="box">
+              <div class="hert-icon-detail-circle">
+                <FontAwesomeIcon icon={["far", "heart"]} class="heart-detail-icon"/>
+              </div> 
+              <div class="comment-icon-detail-circle">
+                <FontAwesomeIcon icon={["far", "comment"]} class="comment-detail-icon"/>
+              </div>
+            <div class="user-info-detail-box">
+              <div class="user-icon-detail-circle">
+                <FontAwesomeIcon icon={["far", "user"]} class="user-detail-icon" />
+              </div>
+              <div class="user-detail-info-word">平野　祐介</div>
+              <div class="user-detail-info-word">WEBエンジニア</div>
+              <div class="user-detail-info-word">2010年12月 入社</div>
             </div>
-            <div class="user-detail-info-word">平野　祐介</div>
-            <div class="user-detail-info-word">WEBエンジニア</div>
-            <div class="user-detail-info-word">2010年12月 入社</div>
           </div>
           <div class="article-box">
             <div class="user-icon-article-circle">
@@ -54,8 +56,6 @@ class ArticleDetail extends React.Component {
               っっっっっっっっっr
               っっっっっっっr
               
-              
-              
               っっっっっっっっっっっd
               ああああああああ
               いいいいいいいいいいrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
@@ -69,8 +69,6 @@ class ArticleDetail extends React.Component {
               っっっっっっっっっっr
               っっっっっっっっっr
               っっっっっっっr
-              
-              
               
               っっっっっっっっっっっd
               `}

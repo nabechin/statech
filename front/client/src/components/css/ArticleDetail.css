@@ -8,15 +8,21 @@
   height: 170px;
   width: 120px;
   background-color: #ffffff;
-  margin-left: 10px;
+  position: relative;
+  top: -139px;
+  margin-left: 200px;
   text-align: center;
+}
+
+.box {
+  position: fixed;
 }
 
 .article-box {
   height: auto;
   width: 800px;
   background-color: #ffffff;
-  margin-left: 30px;
+  margin-left: 350px;
 }
 
 .user-icon-detail-circle {
@@ -48,14 +54,14 @@
   background-color: #ffffff;
   position: relative;
   top: 200px;
-  left: 172px;
+  left: 220px;
 }
 
 .heart-detail-icon {
   height: 40px;
   width: 40px;
   position: relative;
-  top: 17px;
+  top: 20px;
   left: 15px;
 }
 
@@ -65,8 +71,8 @@
   border-radius: 50%;
   background-color: #ffffff;
   position: relative;
-  top: 300px;
-  left: 102px;
+  top: 230px;
+  left: 220px;
 }
 
 .comment-detail-icon {
