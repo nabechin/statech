@@ -39,7 +39,7 @@ class Top extends React.Component {
           </span>
           <span className="article-main-box">
             {/* ここをループする */}
-            <a href="/aaa" class="article-sub-box-href">
+            <a href="/article/detail" class="article-sub-box-href">
               <div className="article-sub-box">
                 <span className="user-info-box">
                   <div className="user-circle">
@@ -55,7 +55,7 @@ class Top extends React.Component {
                 </span>
               </div>
             </a>
-            <a href="/aaa" class="article-sub-box-href">
+            <a href="/article/detail" class="article-sub-box-href">
               <div className="article-sub-box">
                 <span className="user-info-box">
                   <div className="user-circle">

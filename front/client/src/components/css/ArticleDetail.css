@@ -1,0 +1,134 @@
+.article-detail-main-box {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.user-info-detail-box {
+  height: 170px;
+  width: 120px;
+  background-color: #ffffff;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.article-box {
+  height: auto;
+  width: 800px;
+  background-color: #ffffff;
+  margin-left: 30px;
+}
+
+.user-icon-detail-circle {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #E0E0E0;
+  position: relative;
+  top: 10px;
+  left: 33px;
+  margin-bottom: 20px;
+}
+
+.user-detail-icon {
+  height: 30px;
+  position: relative;
+  top: 10px;
+}
+
+.user-detail-info-word {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.hert-icon-detail-circle {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: relative;
+  top: 200px;
+  left: 172px;
+}
+
+.heart-detail-icon {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  top: 17px;
+  left: 15px;
+}
+
+.comment-icon-detail-circle {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: relative;
+  top: 300px;
+  left: 102px;
+}
+
+.comment-detail-icon {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  top: 17px;
+  left: 15px;
+}
+
+.user-icon-article-circle {
+  height: 30px;
+  width: 30px;
+  background-color: #E0E0E0;
+  border-radius: 50%;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.user-icon-article-icon {
+  height: 17px;
+  position: relative;
+  left: 8px;
+}
+
+.article-user-name {
+  position: relative;
+  left: 60px;
+  font-size: 15px;
+}
+
+.article-post-date {
+  position: relative;
+  left: 80px;
+  font-size: 13px;
+  color: #999999;
+}
+
+.article-detail-title {
+  font-size: 30px;
+  position: relative;
+  top: 10px;
+  left: 60px;
+}
+
+.tag-box {
+  display: flex;
+  position: relative;
+  top: 10px;
+  left: 52px;
+}
+
+.article-detail-tag {
+  margin-left: 10px;
+  color: #999999;
+}
+
+.article-content {
+  white-space: pre-line;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-left: 60px;
+}
