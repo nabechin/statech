@@ -55,14 +55,14 @@
   position: relative;
   top: 200px;
   left: 220px;
+  cursor : pointer;
 }
 
 .heart-detail-icon {
-  height: 40px;
-  width: 40px;
+  font-size: 30px;
   position: relative;
   top: 20px;
-  left: 15px;
+  left: 20px;
 }
 
 .comment-icon-detail-circle {
@@ -73,14 +73,14 @@
   position: relative;
   top: 230px;
   left: 220px;
+  cursor : pointer;
 }
 
 .comment-detail-icon {
-  height: 40px;
-  width: 40px;
+  font-size: 30px;
   position: relative;
   top: 17px;
-  left: 15px;
+  left: 20px;
 }
 
 .user-icon-article-circle {
@@ -94,9 +94,11 @@
 }
 
 .user-icon-article-icon {
+  font-size: 12px;
   height: 17px;
   position: relative;
-  left: 8px;
+  top: 4px;
+  left: 10px;
 }
 
 .article-user-name {

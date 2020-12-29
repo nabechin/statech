@@ -5,43 +5,70 @@ import '../../css/ArticleDetail.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class ArticleDetail extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      hertColor: "",
+      isHertColor: false
+    };
+  }
+
+  //  ハートのアイコンをクリックした時に発火
+  //  isHertColor = true　ならハートは黒色
+  //  isHertColor = false　ならハートは赤色の状態にする
+  // 　ここでaxiosで非同期にuser_articleテーブルを更新すること。
+  clickGoodButton = e => {
+    if(!this.state.isHertColor) {
+      this.setState({
+        hertColor: "red",
+        isHertColor: true
+      });
+    } else {
+      this.setState({
+        hertColor: "",
+        isHertColor: false
+      })
+    }
+  };
+
   render() {
     return(
       <div>
         <Header>
           <Memu></Memu>
         </Header>
-        <span class="article-detail-main-box">
-          <div class="box">
-              <div class="hert-icon-detail-circle">
-                <FontAwesomeIcon icon={["far", "heart"]} class="heart-detail-icon"/>
+        <span className="article-detail-main-box">
+          <div className="box">
+              <div className="hert-icon-detail-circle" onClick={this.clickGoodButton}>
+                <FontAwesomeIcon icon={["far", "heart"]} className="heart-detail-icon" style={{ 'color': this.state.hertColor }}/>
               </div> 
-              <div class="comment-icon-detail-circle">
-                <FontAwesomeIcon icon={["far", "comment"]} class="comment-detail-icon"/>
+              <div className="comment-icon-detail-circle">
+                <FontAwesomeIcon icon={["far", "comment"]} className="comment-detail-icon"/>
               </div>
-            <div class="user-info-detail-box">
-              <div class="user-icon-detail-circle">
-                <FontAwesomeIcon icon={["far", "user"]} class="user-detail-icon" />
+            <div className="user-info-detail-box">
+              <div className="user-icon-detail-circle">
+                <FontAwesomeIcon icon={["far", "user"]} className="user-detail-icon" />
               </div>
-              <div class="user-detail-info-word">平野　祐介</div>
-              <div class="user-detail-info-word">WEBエンジニア</div>
-              <div class="user-detail-info-word">2010年12月 入社</div>
+              <div className="user-detail-info-word">平野　祐介</div>
+              <div className="user-detail-info-word">WEBエンジニア</div>
+              <div className="user-detail-info-word">2010年12月 入社</div>
             </div>
           </div>
-          <div class="article-box">
-            <div class="user-icon-article-circle">
-              <FontAwesomeIcon icon={["far", "user"]} class="user-icon-article-icon" />
+          <div className="article-box">
+            <div className="user-icon-article-circle">
+              <FontAwesomeIcon icon={["far", "user"]} className="user-icon-article-icon" />
             </div>
-            <span class="article-user-name">ユーザー名</span>
-            <span class="article-post-date">2020 / 12 / 20 投稿</span>
-            <div class="article-detail-title">Reactでなに作ろうアイウエオ</div>
+            <span className="article-user-name">ユーザー名</span>
+            <span className="article-post-date">2020 / 12 / 20 投稿</span>
+            <div className="article-detail-title">Reactでなに作ろうアイウエオ</div>
             {/* 多分ここをループすると思う */}
-            <span class="tag-box">
-              <div class="article-detail-tag">#java</div>
-              <div class="article-detail-tag">#HTML</div>
-              <div class="article-detail-tag">#CSS</div>
+            <span className="tag-box">
+              <div className="article-detail-tag">#java</div>
+              <div className="article-detail-tag">#HTML</div>
+              <div className="article-detail-tag">#CSS</div>
             </span>
-            <div class="article-content">
+            <div className="article-content">
               {`
               ああああああああ
               いいいいいいいいいいrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
