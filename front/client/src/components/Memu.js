@@ -44,7 +44,7 @@ const Memu = () => {
           <FontAwesomeIcon icon="edit" />
           投稿する
         </Button>
-        <span class="mdc-menu mdc-menu-surface nav-user-circle" id="demo-menu">
+        <span className="mdc-menu mdc-menu-surface nav-user-circle" id="demo-menu">
           <FontAwesomeIcon icon={["far", "user"]} className="nav-user-icon"/>
         </span> 
         <Popper

@@ -9,6 +9,7 @@ import Top from "./top/Top";
 import { far } from "@fortawesome/free-regular-svg-icons";
 import { faEdit, faHeart, faComment, faUser, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
+import ArticleDetail from "./article/detail/ArticleDetail";
 library.add(far, faEdit, faHeart, faComment, faUser, faSearch);
 
 class App extends React.Component {
@@ -29,6 +30,9 @@ class App extends React.Component {
         </Route>
         <Route path="/top">
           <Top/>
+        </Route>
+        <Route path="/article/detail">
+          <ArticleDetail />
         </Route>
       </div>
     );
