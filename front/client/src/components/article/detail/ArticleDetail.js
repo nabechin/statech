@@ -1,8 +1,9 @@
-import React from "react";
-import Header from '../../Header';
+import React from "react"
+import Header from '../../Header'
 import Memu from '../../Memu'
 import '../../css/ArticleDetail.css'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import DisplayCommentModal from './DisplayCommentModal'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 class ArticleDetail extends React.Component {
 
@@ -10,7 +11,8 @@ class ArticleDetail extends React.Component {
     super(props);
     this.state = {
       hertColor: "",
-      isHertColor: false
+      isHertColor: false,
+      isShowModal: false
     };
   }
 
@@ -22,7 +24,8 @@ class ArticleDetail extends React.Component {
     if(!this.state.isHertColor) {
       this.setState({
         hertColor: "red",
-        isHertColor: true
+        isHertColor: true,
+        isShowModal: false
       });
     } else {
       this.setState({
@@ -31,6 +34,18 @@ class ArticleDetail extends React.Component {
       })
     }
   };
+
+  displayCommentModal = () => {
+    this.setState({
+      isShowModal: true
+    })
+  }
+
+  closeCommentModal = () => {
+    this.setState({
+      isShowModal: false
+    })
+  }
 
   render() {
     return(
@@ -43,7 +58,7 @@ class ArticleDetail extends React.Component {
               <div className="hert-icon-detail-circle" onClick={this.clickGoodButton}>
                 <FontAwesomeIcon icon={["far", "heart"]} className="heart-detail-icon" style={{ 'color': this.state.hertColor }}/>
               </div> 
-              <div className="comment-icon-detail-circle">
+              <div className="comment-icon-detail-circle" onClick={this.displayCommentModal}>
                 <FontAwesomeIcon icon={["far", "comment"]} className="comment-detail-icon"/>
               </div>
             <div className="user-info-detail-box">
@@ -102,6 +117,7 @@ class ArticleDetail extends React.Component {
             </div>
           </div>
         </span>
+        { this.state.isShowModal? <DisplayCommentModal closeCommentModal={this.closeCommentModal} /> : "" }
       </div>
     )
   }
