@@ -61,14 +61,16 @@ class ArticleDetail extends React.Component {
               <div className="comment-icon-detail-circle" onClick={this.displayCommentModal}>
                 <FontAwesomeIcon icon={["far", "comment"]} className="comment-detail-icon"/>
               </div>
-            <div className="user-info-detail-box">
-              <div className="user-icon-detail-circle">
-                <FontAwesomeIcon icon={["far", "user"]} className="user-detail-icon" />
+            <a href="/users/me">
+              <div className="user-info-detail-box">
+                <div className="user-icon-detail-circle">
+                  <FontAwesomeIcon icon={["far", "user"]} className="user-detail-icon" />
+                </div>
+                <div className="user-detail-info-word">平野　祐介</div>
+                <div className="user-detail-info-word">WEBエンジニア</div>
+                <div className="user-detail-info-word">2010年12月 入社</div>
               </div>
-              <div className="user-detail-info-word">平野　祐介</div>
-              <div className="user-detail-info-word">WEBエンジニア</div>
-              <div className="user-detail-info-word">2010年12月 入社</div>
-            </div>
+            </a>
           </div>
           <div className="article-box">
             <div className="user-icon-article-circle">
