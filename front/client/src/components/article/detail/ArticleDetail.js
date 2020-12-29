@@ -61,14 +61,16 @@ class ArticleDetail extends React.Component {
               <div className="comment-icon-detail-circle" onClick={this.displayCommentModal}>
                 <FontAwesomeIcon icon={["far", "comment"]} className="comment-detail-icon"/>
               </div>
-            <div className="user-info-detail-box">
-              <div className="user-icon-detail-circle">
-                <FontAwesomeIcon icon={["far", "user"]} className="user-detail-icon" />
+            <a href="/users/me">
+              <div className="user-info-detail-box">
+                <div className="user-icon-detail-circle">
+                  <FontAwesomeIcon icon={["far", "user"]} className="user-detail-icon" />
+                </div>
+                <div className="user-detail-info-word">平野　祐介</div>
+                <div className="user-detail-info-word">WEBエンジニア</div>
+                <div className="user-detail-info-word">2010年12月 入社</div>
               </div>
-              <div className="user-detail-info-word">平野　祐介</div>
-              <div className="user-detail-info-word">WEBエンジニア</div>
-              <div className="user-detail-info-word">2010年12月 入社</div>
-            </div>
+            </a>
           </div>
           <div className="article-box">
             <div className="user-icon-article-circle">
@@ -117,6 +119,61 @@ class ArticleDetail extends React.Component {
             </div>
           </div>
         </span>
+        <div className="comment-box">
+          <p className="comment-box-word">コメント一覧</p>
+          {/* ここをループする */}
+          <span className="comment-sub-box">
+            <div className="comment-box-user-circle">
+              <FontAwesomeIcon icon={["far", "user"]} className="comment-box-user-con" />
+            </div>
+            <span className="comment-words-box">
+              <span className="comment-box-user-name">ユーザー名</span>
+              <span className="comment-box-post-date">2020 / 12 / 20</span>
+            </span>
+            <div className="comment-box-content">
+                {`
+                これはコメントです。
+                もしかしたら文字制限をかけた方がいいかと思います。
+                いたずら防止の為にもね。
+                `}
+              </div>
+            <hr className="comment-box-line"></hr>
+          </span>
+          <span className="comment-sub-box">
+            <div className="comment-box-user-circle">
+              <FontAwesomeIcon icon={["far", "user"]} className="comment-box-user-con" />
+            </div>
+            <span className="comment-words-box">
+              <span className="comment-box-user-name">ユーザー名</span>
+              <span className="comment-box-post-date">2020 / 12 / 20</span>
+            </span>
+            <div className="comment-box-content">
+                {`
+                これはコメントです。
+                もしかしたら文字制限をかけた方がいいかと思います。
+                いたずら防止の為にもね。
+                `}
+              </div>
+            <hr className="comment-box-line"></hr>
+          </span>
+          <span>
+            <div className="comment-box-user-circle">
+              <FontAwesomeIcon icon={["far", "user"]} className="comment-box-user-con" />
+            </div>
+            <span className="comment-words-box">
+              <span className="comment-box-user-name">ユーザー名</span>
+              <span className="comment-box-post-date">2020 / 12 / 20</span>
+            </span>
+            <div className="comment-box-content">
+                {`
+                これはコメントです。
+                もしかしたら文字制限をかけた方がいいかと思います。
+                いたずら防止の為にもね。
+                `}
+              </div>
+            <hr className="comment-box-line"></hr>
+          </span>
+        </div>
         { this.state.isShowModal? <DisplayCommentModal closeCommentModal={this.closeCommentModal} /> : "" }
       </div>
     )
