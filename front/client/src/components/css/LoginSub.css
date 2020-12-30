@@ -1,0 +1,53 @@
+.login-box {
+  height: 450px;
+  width: 400px;
+  background-color: #ffffff;
+  margin: auto;
+  margin-top: 135px;
+}
+
+.login-box-title {
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+  top: 35px;
+}
+
+.login-box-word {
+  font-size: 22px;
+  text-align: center;
+  position: relative;
+  top: 25px;
+}
+
+.login-box-form {
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 50px;
+}
+
+.login-box-label {
+  display: block;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.login-box-input {
+  width: 300px;
+}
+
+.forgot-password-link {
+  font-size: 12px;
+  color: #0094FF;
+  position: relative;
+  top: -23px;
+  left: -45px;
+}
+
+.create-new-account-link {
+  font-size: 12px;
+  color: #0094FF;
+  position: relative;
+  top: 70px;
+  left: 50px;
+}
