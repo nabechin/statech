@@ -5,6 +5,7 @@ import Article from "./Article";
 import Route from "./Route";
 import Signup from "./Signup";
 import Top from "./top/Top";
+import Loginsub from "./login/Login"
 
 import { far } from "@fortawesome/free-regular-svg-icons";
 import { faEdit, faHeart, faComment, faUser, faSearch } from "@fortawesome/free-solid-svg-icons";
@@ -33,6 +34,9 @@ class App extends React.Component {
         </Route>
         <Route path="/article/detail">
           <ArticleDetail />
+        </Route>
+        <Route path="/loginsub">
+          <Loginsub />
         </Route>
       </div>
     );
